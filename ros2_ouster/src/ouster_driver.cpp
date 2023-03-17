@@ -47,8 +47,8 @@ OusterDriver::OusterDriver(
   this->declare_parameter("computer_ip", "192.168.1.10");
   this->declare_parameter("imu_port",rclcpp::ParameterValue(9866));
   this->declare_parameter("lidar_port",rclcpp::ParameterValue(2368));
-  this->declare_parameter("imu_to_sensor_transform");
-  this->declare_parameter("lidar_to_sensor_transform");
+  // this->declare_parameter("imu_to_sensor_transform");
+  // this->declare_parameter("lidar_to_sensor_transform");
 
 
   this->declare_parameter("sensor_frame", rclcpp::ParameterValue(std::string("laser_sensor_frame")));
@@ -59,14 +59,14 @@ OusterDriver::OusterDriver(
   this->declare_parameter("os1_proc_mask", rclcpp::ParameterValue(std::string("PCL")));
 
   // added by zyl
-  this->declare_parameter("x_offset_array");
-  this->declare_parameter("y_offset_array");
-  this->declare_parameter("ah_offset_array");
-  this->declare_parameter("av_offset_array");
-  this->declare_parameter("laser_id_array");
-  this->declare_parameter("num_lasers");
-  this->declare_parameter("distance_resolution");
-  this->declare_parameter("ring_scan");
+  // this->declare_parameter("x_offset_array");
+  // this->declare_parameter("y_offset_array");
+  // this->declare_parameter("ah_offset_array");
+  // this->declare_parameter("av_offset_array");
+  // this->declare_parameter("laser_id_array");
+  // this->declare_parameter("num_lasers");
+  // this->declare_parameter("distance_resolution");
+  // this->declare_parameter("ring_scan");
   this->declare_parameter("lidar_vendor", rclcpp::ParameterValue(std::string("OLE_3D_V2")));
 
 }
