@@ -2,7 +2,7 @@ ouster_driver:
   ros__parameters:
     # modified by zyl
     lidar_ip: 192.168.1.123
-    computer_ip: 192.168.1.10
+    computer_ip: 192.168.1.99
     lidar_mode: "2048x16"
     imu_port: 9866
     lidar_port: 2368
